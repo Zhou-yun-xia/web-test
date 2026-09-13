@@ -1,0 +1,72 @@
+
+/* ========== 全局基础样式 ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* 设置页面背景色，营造简约氛围 */
+    background-color: #f4f6f9;
+    /* 使用 Flexbox 实现页面绝对居中 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+
+/* ========== 名片卡片样式 ========== */
+.card {
+    background-color: #ffffff;
+    width: 320px;
+    padding: 40px 30px;
+    text-align: center;
+    
+    /* 核心需求：12px 圆角与柔和阴影 */
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    
+    /* 核心需求：鼠标悬停上浮过渡动画 */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* 鼠标悬停时：轻微上浮并加深阴影 */
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* ========== 头像样式 ========== */
+.avatar img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; /* 实现圆形头像 */
+    object-fit: cover;
+    border: 3px solid #f0f0f0;
+}
+
+/* ========== 文字信息样式 ========== */
+.info {
+    margin-top: 20px;
+}
+
+.name {
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 6px;
+}
+
+.title {
+    font-size: 14px;
+    color: #888888;
+    margin-bottom: 20px;
+}
+
+.contact {
+    font-size: 14px;
+    color: #555555;
+    line-height: 1.8;
+}
+
