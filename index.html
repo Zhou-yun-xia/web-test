@@ -99,10 +99,15 @@
             background:#000;
             border-radius:12px;
             overflow:hidden;
+            aspect-ratio: 16 / 9;   /* 宽高比：16/9，可改 4/3、21/9、9/16 */
         }
         .video-wrap video {
             width:100%;
+            height:100%;
             display:block;
+            background:#000;
+            object-fit: contain;    /* 完整显示不变形；要铺满裁切改成 cover */
+            object-position: center;
         }
 
         /* 景点卡片 */
